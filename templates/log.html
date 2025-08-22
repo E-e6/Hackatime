@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Log Hours</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Log Your Coding Hours</h1>
+    <form method="POST">
+        <input type="number" name="hours" step="0.25" min="0.25" required>
+        <button type="submit">Add Hours</button>
+    </form>
+
+    <h2>Total Hours: {{ total_hours }}</h2>
+    <ul>
+        {% for log in logs %}
+            <li>{{ log.hours }} hours on {{ log.timestamp.strftime('%Y-%m-%d %H:%M') }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Back to Home</a>
+</body>
+</html>

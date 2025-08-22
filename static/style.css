@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f8ff;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Headers */
+h1, h2 {
+    color: #2a52be;
+}
+
+/* Links */
+a {
+    color: #ff4500;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Forms */
+form {
+    margin: 20px 0;
+}
+
+input[type="number"], input[type="text"] {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #2a52be;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1d3b7a;
+}
+
+/* Log list */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Badge styling */
+p {
+    font-size: 1.1em;
+}
+
+.badge {
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+.Bronze {
+    background-color: #cd7f32;
+    color: white;
+}
+
+.Silver {
+    background-color: #c0c0c0;
+    color: black;
+}
+
+.Gold {
+    background-color: #ffd700;
+    color: black;
+}
+
+/* Tip box */
+p.tip {
+    background-color: #e6f7ff;
+    border-left: 4px solid #2a52be;
+    padding: 10px;
+    margin: 15px 0;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    input, button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
