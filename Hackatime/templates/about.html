@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Hackatime Logger</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>About This Project</h1>
+    <p>This app logs coding hours to help students track progress. Built with Flask and SQLite.</p>
+    <nav>
+        <a href="{{ url_for('index') }}">Home</a> |
+        <a href="{{ url_for('log') }}">Log Hours</a>
+    </nav>
+</body>
+</html>
